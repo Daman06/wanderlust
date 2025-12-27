@@ -93,7 +93,7 @@ app.use("/",userRouter);
 
 
 app.get("/",(req,res)=>{
-    res.send("server is working");
+    res.render("listings/index");
 });
 app.use((req,res,next)=>{
     next(new ExpressError(404,"Page not found!"));
